@@ -1,0 +1,33 @@
+---
+interface Props {
+	title: string;
+	href?: string;
+	summary: string;
+}
+
+const { title, href, summary } = Astro.props;
+---
+
+<div class="py-4 first:pt-0">
+	{href ? (
+		<a
+			href={href}
+			class="group block"
+			rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+			target={href.startsWith('http') ? '_blank' : undefined}
+		>
+			<h3 class="text-lg font-semibold text-zinc-900 group-hover:text-zinc-600 dark:text-zinc-100 dark:group-hover:text-zinc-400 transition-colors">
+				{title}
+			</h3>
+			<p class="mt-1 text-zinc-600 dark:text-zinc-400">{summary}</p>
+		</a>
+	) : (
+		<>
+			<h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+				{title}
+			</h3>
+			<p class="mt-1 text-zinc-600 dark:text-zinc-400">{summary}</p>
+		</>
+	)}
+</div>
+

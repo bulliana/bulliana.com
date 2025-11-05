@@ -1,0 +1,36 @@
+---
+interface Props {
+	links: {
+		email?: string;
+		github?: string;
+		twitter?: string;
+		linkedin?: string;
+		[key: string]: string | undefined;
+	};
+}
+
+const { links } = Astro.props;
+
+const linkLabels: Record<string, string> = {
+	email: 'Email',
+	github: 'GitHub',
+	twitter: 'Twitter',
+	linkedin: 'LinkedIn',
+};
+
+const linkEntries = Object.entries(links).filter(([_, href]) => href);
+---
+
+<div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+	{linkEntries.map(([key, href]) => (
+		<a
+			href={href}
+			class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 underline underline-offset-4 transition-colors"
+			rel={key === 'email' ? undefined : 'noopener noreferrer'}
+			target={key === 'email' ? undefined : '_blank'}
+		>
+			{linkLabels[key] || key}
+		</a>
+	))}
+</div>
+

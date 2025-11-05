@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LinkList from '../components/LinkList.astro';
+import Highlight from '../components/Highlight.astro';
+import siteData from '../content/site.json';
+
+const { name, tagline, location, about, links, highlights, now } = siteData;
+---
+
+<BaseLayout title={name} description={tagline}>
+	<header class="mb-16">
+		{/* Optional avatar - uncomment and add avatar.jpg to /public if you have one */}
+		{/* <img
+			src="/avatar.jpg"
+			alt={`${name} avatar`}
+			class="mx-auto mb-8 h-24 w-24 rounded-full object-cover shadow-lg"
+		/> */}
+		<h1 class="mb-4 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-5xl">
+			{name}
+		</h1>
+		<p class="mb-2 text-lg text-zinc-600 dark:text-zinc-400">
+			{tagline}
+		</p>
+		{location && (
+			<p class="text-sm text-zinc-500 dark:text-zinc-500">
+				{location}
+			</p>
+		)}
+	</header>
+
+	<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+		<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">About</h2>
+		<div class="prose prose-zinc dark:prose-invert max-w-none">
+			<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+				{about}
+			</p>
+		</div>
+	</section>
+
+	{highlights && highlights.length > 0 && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Highlights</h2>
+			<div class="space-y-0">
+				{highlights.map((highlight) => (
+					<Highlight
+						title={highlight.title}
+						href={highlight.href}
+						summary={highlight.summary}
+					/>
+				))}
+			</div>
+		</section>
+	)}
+
+	<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+		<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Links</h2>
+		<LinkList links={links} />
+	</section>
+
+	{now && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Now</h2>
+			<div class="prose prose-zinc dark:prose-invert max-w-none">
+				<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+					{now}
+				</p>
+				<p class="mt-4 text-sm text-zinc-500 dark:text-zinc-500">
+					<a href="/now" class="underline hover:text-zinc-700 dark:hover:text-zinc-300">
+						Read more →
+					</a>
+				</p>
+			</div>
+		</section>
+	)}
+</BaseLayout>

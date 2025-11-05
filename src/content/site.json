@@ -1,0 +1,31 @@
+{
+  "name": "Your Name",
+  "tagline": "Designer & developer focused on simple digital experiences.",
+  "location": "Berlin, Germany",
+  "about": "I build calm, functional interfaces and occasionally write about design systems. This site is a quiet space for my work and thoughts.",
+  "now": "Currently learning Astro and rebuilding my personal site to be faster and more intentional.",
+  "links": {
+    "email": "mailto:you@domain.com",
+    "github": "https://github.com/yourname",
+    "twitter": "https://twitter.com/yourhandle",
+    "linkedin": "https://www.linkedin.com/in/yourname"
+  },
+  "highlights": [
+    {
+      "title": "Tiny Design System",
+      "href": "https://project.example.com",
+      "summary": "A minimal UI library for quiet digital products."
+    },
+    {
+      "title": "Writing: The Beauty of Empty Space",
+      "href": "/now",
+      "summary": "Short reflection on minimalist interfaces."
+    },
+    {
+      "title": "Open Source Project",
+      "href": "https://github.com/example/project",
+      "summary": "A tool that makes development workflows simpler."
+    }
+  ]
+}
+
