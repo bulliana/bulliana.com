@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteData from '../content/site.json';
+
+const title = 'Now';
+---
+
+<BaseLayout title={title}>
+	<article class="prose prose-zinc dark:prose-invert max-w-none">
+		<h1 class="mb-8 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+			Now
+		</h1>
+		
+		<div class="prose prose-zinc dark:prose-invert">
+			<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+				This is a <a href="https://nownownow.com/about" class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100 underline underline-offset-4">now page</a> — a snapshot of what I'm focused on right now.
+			</p>
+			
+			{siteData.now && (
+				<div class="mt-6 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+					<p>{siteData.now}</p>
+				</div>
+			)}
+			
+			<p class="mt-6 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+				Update this page regularly to reflect your current priorities, projects, and thoughts.
+			</p>
+		</div>
+	</article>
+</BaseLayout>
+
