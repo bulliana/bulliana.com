@@ -1,31 +1,57 @@
 {
-  "name": "Your Name",
-  "tagline": "Designer & developer focused on simple digital experiences.",
-  "location": "Berlin, Germany",
-  "about": "I build calm, functional interfaces and occasionally write about design systems. This site is a quiet space for my work and thoughts.",
-  "now": "Currently learning Astro and rebuilding my personal site to be faster and more intentional.",
+  "name": "Uliana Sirotina",
+  "tagline": "Engineering Manager | Engineering Team Lead",
+  "location": "Munich, Germany",
+  "about": "I lead engineering teams that care about purposeful work, empathy, and clarity. My background in front-end development helps me bridge product, design, and engineering — creating environments where people and products grow together.",
+  "now": "Currently leading a cross-functional team at SoSafe SE and continuing to explore accessibility, process improvement, and sustainable team culture.",
   "links": {
-    "email": "mailto:you@domain.com",
-    "github": "https://github.com/yourname",
-    "twitter": "https://twitter.com/yourhandle",
-    "linkedin": "https://www.linkedin.com/in/yourname"
+    "email": "mailto:uliana.sirotina@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/usirotina/"
   },
   "highlights": [
     {
-      "title": "Tiny Design System",
-      "href": "https://project.example.com",
-      "summary": "A minimal UI library for quiet digital products."
+      "title": "SoSafe SE — Engineering Team Lead (2024–present)",
+      "href": "https://sosafe.de/",
+      "summary": "Leading a cross-functional team and partnering with Product and Design to align roadmap and priorities with company values. Implemented accessibility guardrails and monitoring across key products."
     },
     {
-      "title": "Writing: The Beauty of Empty Space",
-      "href": "/now",
-      "summary": "Short reflection on minimalist interfaces."
+      "title": "Garden.io GmbH — Senior Frontend Engineer (2023–2024)",
+      "href": "https://garden.io/",
+      "summary": "Developed product features using React, TypeScript, and React-Query. Contributed to API improvements and internal tooling."
     },
     {
-      "title": "Open Source Project",
-      "href": "https://github.com/example/project",
-      "summary": "A tool that makes development workflows simpler."
+      "title": "Adjust GmbH — Senior Frontend Engineer (2022–2023)",
+      "href": "https://www.adjust.com/",
+      "summary": "Improved team processes and code reliability by introducing structured API error handling, separate monitoring flows, and a clear bug-tracking system."
+    },
+    {
+      "title": "Uberall GmbH — Engineering Manager & Squad Lead (2020–2022)",
+      "href": "https://uberall.com/",
+      "summary": "Managed a team of six engineers, introduced Scrum, coached team members, and built a culture of constructive feedback, transparency, and cross-functional collaboration."
+    },
+    {
+      "title": "Trail — Freelance Frontend Engineer (2023–2024)",
+      "href": "",
+      "summary": "Developed front-end features with React, TypeScript, and GraphQL (Apollo). Helped improve product structure and maintainability for a small startup team."
+    },
+    {
+      "title": "Mentor Move — Career & Relocation Mentor (2022)",
+      "href": "https://mentormove.me/",
+      "summary": "Supported professionals relocating to Europe by reviewing CVs, running mock interviews, and offering career coaching."
     }
+  ],
+  "skills": ["Leadership", "Frontend Engineering", "ReactJS", "TypeScript", "React-Query", "styled-components", "Process Improvement", "Accessibility"],
+  "values": [
+    "purposeful work",
+    "documented processes",
+    "understanding the bigger picture",
+    "mental health",
+    "open, clear and direct communication",
+    "empathy at work",
+    "cross-functional collaboration",
+    "continuous learning & growth",
+    "shared ownership & accountability",
+    "constructive feedback culture",
+    "cool team events"
   ]
 }
-
