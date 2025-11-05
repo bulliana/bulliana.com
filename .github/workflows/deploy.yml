@@ -20,6 +20,8 @@ jobs:
           node-version: '20'
       - run: npm install
       - run: npm run build
+      - name: Add .nojekyll file
+        run: touch ./dist/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
