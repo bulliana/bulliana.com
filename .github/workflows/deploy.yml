@@ -22,14 +22,11 @@ jobs:
       - run: npm run build
       - name: Ensure .nojekyll file exists and verify build output
         run: |
-          # Ensure .nojekyll file exists (should already be there from public/, but create as backup)
-          if [ ! -f ./dist/.nojekyll ]; then
-            echo "Creating .nojekyll file (was not copied from public/)"
-            echo "# Disable Jekyll processing" > ./dist/.nojekyll
-          fi
+          # Ensure .nojekyll file exists (empty file - GitHub Pages prefers this)
+          echo "" > ./dist/.nojekyll
           echo "✅ Verifying .nojekyll file exists:"
           ls -la ./dist/.nojekyll || exit 1
-          cat ./dist/.nojekyll
+          echo "File size: $(wc -c < ./dist/.nojekyll) bytes"
           echo ""
           echo "✅ Verifying _astro directory exists:"
           ls -la ./dist/_astro/ || exit 1
@@ -37,8 +34,11 @@ jobs:
           echo "✅ Verifying CSS files in _astro:"
           ls -la ./dist/_astro/*.css 2>/dev/null | head -5 || echo "⚠️  Warning: No CSS files found"
           echo ""
+          echo "✅ Verifying all files in dist root:"
+          ls -la ./dist/ | head -15
+          echo ""
           echo "✅ Build output structure:"
-          find ./dist -maxdepth 2 -type f -name ".nojekyll" -o -name "*.html" | head -5
+          find ./dist -maxdepth 2 -type f | head -10
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
