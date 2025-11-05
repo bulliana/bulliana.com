@@ -56,20 +56,4 @@ const { name, tagline, location, about, links, highlights, now } = siteData;
 		<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Links</h2>
 		<LinkList links={links} />
 	</section>
-
-	{now && (
-		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
-			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Now</h2>
-			<div class="prose prose-zinc dark:prose-invert max-w-none">
-				<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-					{now}
-				</p>
-				<p class="mt-4 text-sm text-zinc-500 dark:text-zinc-500">
-					<a href="/now" class="underline hover:text-zinc-700 dark:hover:text-zinc-300">
-						Read more →
-					</a>
-				</p>
-			</div>
-		</section>
-	)}
 </BaseLayout>
