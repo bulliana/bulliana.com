@@ -6,7 +6,7 @@ import EducationItem from '../components/EducationItem.astro';
 import AdditionalInfoItem from '../components/AdditionalInfoItem.astro';
 import siteData from '../content/site.json';
 
-const { name, tagline, location, links, buzzwords, values, experience, freelancing, education, additionalInfo } = siteData;
+const { name, tagline, location, links, about, values, experience, freelancing, education, additionalInfo } = siteData;
 ---
 
 <BaseLayout title={name} description={tagline}>
@@ -23,6 +23,17 @@ const { name, tagline, location, links, buzzwords, values, experience, freelanci
 			</p>
 		)}
 	</header>
+
+	{about && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">About</h2>
+			<div class="prose prose-zinc dark:prose-invert max-w-none">
+				<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+					{about}
+				</p>
+			</div>
+		</section>
+	)}
 
 	{values && values.length > 0 && (
 		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
