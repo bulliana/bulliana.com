@@ -20,12 +20,18 @@ jobs:
           node-version: '20'
       - run: npm install
       - run: npm run build
-      - name: Ensure .nojekyll file exists and verify build output
+      - name: Fix asset directory name and ensure .nojekyll exists
         run: |
+          # Check if 'astro' folder exists (without underscore) and rename to '_astro'
+          if [ -d "./dist/astro" ] && [ ! -d "./dist/_astro" ]; then
+            echo "⚠️  Found 'astro' folder without underscore - renaming to '_astro'"
+            mv ./dist/astro ./dist/_astro
+          fi
+          
           # Create .nojekyll file (empty - GitHub Pages requires this to disable Jekyll)
           touch ./dist/.nojekyll
-          # Also ensure it's readable
           chmod 644 ./dist/.nojekyll
+          
           # Alternative method: Create _config.yml to disable Jekyll (backup)
           echo "theme: null" > ./dist/_config.yml
           echo "plugins: []" >> ./dist/_config.yml
@@ -33,13 +39,20 @@ jobs:
           echo "✅ Verifying .nojekyll file exists:"
           ls -la ./dist/.nojekyll || exit 1
           echo "File size: $(wc -c < ./dist/.nojekyll) bytes"
-          file ./dist/.nojekyll
+          echo ""
+          echo "✅ Checking for asset directories:"
+          ls -la ./dist/ | grep -E "(astro|_astro)" || echo "No astro directory found"
           echo ""
           echo "✅ Verifying _astro directory exists:"
-          ls -la ./dist/_astro/ || exit 1
-          echo ""
-          echo "✅ Verifying CSS files in _astro:"
-          ls -la ./dist/_astro/*.css 2>/dev/null | head -5 || echo "⚠️  Warning: No CSS files found"
+          if [ -d "./dist/_astro" ]; then
+            ls -la ./dist/_astro/
+            echo ""
+            echo "✅ Verifying CSS files in _astro:"
+            ls -la ./dist/_astro/*.css 2>/dev/null | head -5 || echo "⚠️  Warning: No CSS files found"
+          else
+            echo "❌ ERROR: _astro directory does not exist!"
+            exit 1
+          fi
           echo ""
           echo "✅ Checking HTML files for CSS references:"
           grep -r "href.*_astro" ./dist/*.html || echo "No _astro references found in HTML"
