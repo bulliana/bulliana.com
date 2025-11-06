@@ -1,20 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LinkList from '../components/LinkList.astro';
-import Highlight from '../components/Highlight.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import EducationItem from '../components/EducationItem.astro';
+import AdditionalInfoItem from '../components/AdditionalInfoItem.astro';
 import siteData from '../content/site.json';
 
-const { name, tagline, location, about, links, highlights, now } = siteData;
+const { name, tagline, location, links, buzzwords, values, experience, freelancing, education, additionalInfo } = siteData;
 ---
 
 <BaseLayout title={name} description={tagline}>
 	<header class="mb-16">
-		{/* Optional avatar - uncomment and add avatar.jpg to /public if you have one */}
-		{/* <img
-			src="/avatar.jpg"
-			alt={`${name} avatar`}
-			class="mx-auto mb-8 h-24 w-24 rounded-full object-cover shadow-lg"
-		/> */}
 		<h1 class="mb-4 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 md:text-5xl">
 			{name}
 		</h1>
@@ -28,24 +24,71 @@ const { name, tagline, location, about, links, highlights, now } = siteData;
 		)}
 	</header>
 
-	<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
-		<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">About</h2>
-		<div class="prose prose-zinc dark:prose-invert max-w-none">
-			<p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-				{about}
-			</p>
-		</div>
-	</section>
-
-	{highlights && highlights.length > 0 && (
+	{values && values.length > 0 && (
 		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
-			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Highlights</h2>
+			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">What I care about</h2>
+			<p class="text-zinc-600 dark:text-zinc-400">{values.join(' | ')}</p>
+		</section>
+	)}
+
+	{experience && experience.length > 0 && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Experience</h2>
 			<div class="space-y-0">
-				{highlights.map((highlight) => (
-					<Highlight
-						title={highlight.title}
-						href={highlight.href}
-						summary={highlight.summary}
+				{experience.map((item) => (
+					<ExperienceItem
+						title={item.title}
+						period={item.period}
+						href={item.href}
+						points={item.points}
+					/>
+				))}
+			</div>
+		</section>
+	)}
+
+	{freelancing && freelancing.length > 0 && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Freelancing</h2>
+			<div class="space-y-0">
+				{freelancing.map((item) => (
+					<ExperienceItem
+						title={item.title}
+						period={item.period}
+						href={item.href}
+						points={item.points}
+					/>
+				))}
+			</div>
+		</section>
+	)}
+
+	{education && education.length > 0 && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Education</h2>
+			<div class="space-y-0">
+				{education.map((item) => (
+					<EducationItem
+						title={item.title}
+						period={item.period}
+						details={item.details}
+					/>
+				))}
+			</div>
+		</section>
+	)}
+
+	{additionalInfo && additionalInfo.length > 0 && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Additional info</h2>
+			<div class="space-y-0">
+				{additionalInfo.map((item) => (
+					<AdditionalInfoItem
+						title={item.title}
+						period={item.period}
+						href={item.href}
+						details={item.details}
+						points={item.points}
 					/>
 				))}
 			</div>
