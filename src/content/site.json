@@ -1,151 +1,133 @@
 {
   "name": "Uliana Sirotina",
-  "tagline": "Engineering Manager with background in frontend development",
+  "tagline": "Engineering Manager | Engineering Team Lead",
   "location": "Munich, Germany",
   "links": {
     "email": "mailto:uliana.sirotina@gmail.com",
     "linkedin": "https://www.linkedin.com/in/usirotina/"
   },
-  "about": "I lead engineering teams that care about purposeful work, empathy, and clarity. My background in front-end development helps me bridge product, design, and engineering — creating environments where people and products grow together.",
+  "about": "I lead engineering teams that care about purposeful work, empathy, and clarity. My background in front-end development helps me bridge product, design, and engineering - creating environments where people and products grow together.",
   "values": [
-    "open, clear and direct communication",
-    "empathy at work",
-    "mental health",
-    "understanding the bigger picture",
     "documented processes",
+    "understanding the bigger picture",
+    "open, clear and direct communication",
     "cross-functional work",
-    "cool team events"
+    "shared ownership & accountability",
+    "constructive feedback culture"
   ],
   "experience": [
     {
-      "title": "SoSafe — Engineering Team Lead",
-      "period": "2024 - curr.",
+      "title": "SoSafe - Engineering Team Lead",
+      "period": "Apr. 2024 - curr.",
       "href": "https://sosafe.de/",
+      "summary": "Joined as Senior Frontend Engineer, promoted to Team Lead within 4 months.",
       "points": [
-        "Managing a cross-functional team of 2: collaborating with a trio (PM & Designer) to define the team's roadmap and priorities, based on overall product strategy and company values",
-        "Navigated the team through a time of change: team changing constellation and scope regularly over the past months",
-        "Implemented guardrails and monitoring for accessibility in key products"
+        "Lead a cross-functional squad of 5 engineers (frontend, backend, fullstack) owning the Customer and User domains; 8 engineers led over 2 years, through two rebuilds of the team",
+        "Rebuilt the team from merged parts - new PM, new designer, two developer pairs from different squads - and distributed technical ownership to the point of holding only 4 of 16 epics personally, backed by a support rotation and pair coding",
+        "Grew an engineer from QE to mid-level backend, coached a senior engineer out of underperformance, and managed one exit end to end, from calibration to separation",
+        "Ran end-to-end hiring for 2 engineers and trained 3 colleagues into the interview process, including one first-time hiring manager; authored hiring-process improvement proposals",
+        "Initiated and delivered automated accessibility tooling across two product platforms, with recurring metrics, leadership dashboards and documentation for org-wide rollout",
+        "Delivered the 2-digit to 4-digit language code migration unblocking locale variants across 5 teams; blocked a shortcut implementation by quantifying the ~2 months per team of debt it would create",
+        "Introduced sprint-based planning, velocity tracking and explicit prioritisation; deliberately halved sprint load to reinvest capacity into architecture, technical planning, bug triage and pairing",
+        "Led the technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership",
+        "Followed the incident with a product provisioning audit, run jointly with Product Analytics, that sized a seven-to-eight-figure ARR impact from over- and under-provisioning; drove a new CRM package-version field and a correction migration that made provisioning data fully reliable"
       ]
     },
     {
-      "title": "Garden.io — Senior Frontend Engineer",
-      "period": "2023 - 2024.",
+      "title": "Garden.io - Senior Frontend Engineer",
+      "period": "Feb. 2023 - Mar. 2024",
       "href": "https://garden.io/",
       "points": [
-        "Developing features using Typescript, ReactJS, React-Query, styled-components",
-        "Made smaller improvements to the API"
+        "Designed and implemented the customer onboarding flow for the product's free tier launch, covering a gap found late in planning and delivered to the fixed release date",
+        "Built product features in TypeScript, React, React Query and styled-components, with smaller improvements to the API"
       ]
     },
     {
-      "title": "Adjust — Senior Frontend Engineer",
-      "period": "2022 - 2023",
+      "title": "Adjust - Senior Frontend Engineer",
+      "period": "Apr. 2022 - Jan. 2023",
       "href": "https://www.adjust.com/",
       "points": [
-        "Developing features using Typescript, ReactJS, React-Query, styled-components",
-        "Improving processes within the team: API error handling structurization, separating Sentry from main company project, creating a bug board and bug flow for the team"
+        "Restructured the team's API error handling and separated Sentry reporting from the shared company project, improving signal quality for frontend issues",
+        "Introduced a bug board and triage flow for the team",
+        "Built product features in TypeScript, React, React Query and styled-components"
       ]
     },
     {
-      "title": "Uberall — Engineering Manager | Squad lead",
-      "period": "2020 - 2022",
+      "title": "Uberall - Engineering Manager",
+      "period": "Aug. 2020 - Mar. 2022",
       "href": "https://uberall.com/",
+      "summary": "Led a cross-functional squad of 6 owning review management: aggregating reviews from Google Maps, TripAdvisor and other partners into a single tool for customers to read, sort and respond to them.",
       "points": [
-        "Managed a cross-functional team of 6: communicating with stakeholders, defining the team's roadmap, participating in product and design decisions during the feature planning phase, dealing with technical debt, improving internal squad processes",
-        "Coaching team members, helping them set up goals and develop their careers, conducting performance assessments, creating and maintaining continuous feedback culture, keeping good relationships within the team, preventing conflicts and roadblocks",
-        "Navigated the team through the time of change: acquisition of another company, reorganisation inside the department, multiple changes in processes",
-        "Introduced Scrum process in my squad from scratch"
+        "Shipped Smart Conversations, a new product built on Google's newly launched Business Messages API, including an early AI auto-response system trained to resolve common customer enquiries without human involvement",
+        "Introduced Scrum from scratch to balance a defect-prone multi-partner ingestion pipeline against new product delivery: two-week sprints with capacity deliberately reserved for incremental fixes, so quality improved steadily without pausing feature work",
+        "Held the team together through an acquisition, a department reorganisation and repeated process changes: zero attrition over two years, with delivery cadence unbroken",
+        "Promoted one engineer to Senior, and mentored a backend engineer from another team into their first Team Lead role, advocating for them with leadership to make it happen",
+        "Frontend hiring manager for the engineering department: hired 13 frontend engineers across all teams, built the frontend hiring process and its documentation, and trained other engineers to interview"
       ]
     },
     {
-      "title": "Uberall — Frontend Engineer",
-      "period": "2019 - 2020",
+      "title": "Uberall - Frontend Engineer",
+      "period": "Aug. 2019 - Jul. 2020",
       "href": "https://uberall.com/",
       "points": [
         "Developed features using ReactJS, Redux, React-Query, and Less, conducted code reviews",
         "Improved onboarding documentation and process in the Engineering department",
-        "Hiring manager since August 2020: conducting interviews, communicating with recruiters, improving hiring process documentation together with BE hiring manager, onboarding other devs to join interviews",
-        "Leading the creation of UI-component library (Theme UI, ReactJS)",
-        "Organised and ran the Frontend Chapter meetings",
-        "De-facto representing the Frontend team in Engineering department",
-        "Improved FE build setup reliability: worked closely with a task force between FEs and DevOps to improve our frontend build",
-        "Part of the creative team: cross-functional team in the company that takes care of all the events within the company",
-        "As a genuinely active and caring person - I organised various events for the squad and department. Both online and offline",
-        "The go-to person inside and outside of the Engineering department"
+        "Led the creation of UI-component library (Theme UI, ReactJS)",
+        "Organised and ran the Frontend Chapter meetings"
       ]
     },
     {
-      "title": "Searchmetrics — Junior Frontend Engineer",
-      "period": "2016 - 2019",
+      "title": "Searchmetrics - Frontend Engineer (joined as working student)",
+      "period": "Sep. 2016 - Jul. 2019",
       "href": "https://www.searchmetrics.com/",
       "points": [
-        "Joined as a working student, stayed as a frontend engineer",
         "Created and maintained UI-kit (component library) - Storybook, ReactJS",
-        "Developed features using ReactJS, SCSS, Glamor, node.js, GraphQL, Highcharts",
-        "Mentoring FE working students",
-        "Part of QA Chapter and Frontend Chapter"
-      ]
-    },
-    {
-      "title": "Lana Labs — Frontend working student",
-      "period": "2016",
-      "href": "",
-      "points": [
-        "Student job for several months worked with AngularJS"
-      ]
-    },
-    {
-      "title": "binaere bauten — Frontend working student",
-      "period": "2015 - 2016",
-      "href": "",
-      "points": [
-        "Started my frontend career here, ask me about how I became a frontend developer!",
-        "Developed features using AngularJS, WordPress"
+        "Mentored frontend working students"
       ]
     }
   ],
   "freelancing": [
     {
-      "title": "Part-time freelance - Trail Frontend Engineer",
-      "period": "Oct. 2023 - curr.",
+      "title": "Trail",
+      "period": "Oct. 2023 - Feb. 2024",
       "href": "",
       "points": [
-        "Developing features using Typescript, ReactJS, GraphQL with Apollo Client"
+        "Frontend features in TypeScript, React, GraphQL/Apollo"
       ]
     },
     {
-      "title": "Part-time freelance - Rebels AI Frontend Engineer",
-      "period": "Dec. 2020 - Jun. 2021 & Nov. 2021 - Jan. 2022",
+      "title": "Rebels AI",
+      "period": "Dec. 2020 - Jan. 2022",
       "href": "",
       "points": [
-        "Refactoring a webapp for geologists using ReactJS, React-Query, Chakra UI, Theme-UI",
-        "Communicating directly with the client, consulting, refactoring their code",
-        "Created an interface for state exam task generator using ReactJS and Chakra UI"
+        "Refactored a geology webapp and built a task-generator interface in React; direct client consulting"
       ]
     }
   ],
   "education": [
     {
-      "title": "Technical University of Berlin — M. Sc. Computer Science",
+      "title": "Technical University of Berlin - M. Sc. Computer Science",
       "period": "2015 - 2018",
       "details": "Majoring in Media design and Human-computer interaction"
     },
     {
-      "title": "Russian State University for the Humanities — Diploma, Intellectual Systems in Humanitarian Sphere",
+      "title": "Russian State University for the Humanities - Diploma, Intellectual Systems in the Humanities",
       "period": "2009 - 2014",
       "details": ""
     }
   ],
   "additionalInfo": [
     {
-      "title": "Mentor Move — Career and relocation mentor",
+      "title": "Mentor Move",
       "period": "2022",
       "href": "https://mentormove.me/",
-      "details": "Career and relocation mentor for specialists of different backgrounds and experiences on the topics of finding a job in Europe",
-      "points": [
-        "Reviewing CVs",
-        "Conducting mock interviews",
-        "Coaching"
-      ]
+      "details": "Career and relocation mentor for specialists moving into European tech roles: CV reviews, mock interviews, coaching"
+    },
+    {
+      "title": "Languages",
+      "period": "",
+      "details": "Russian (native), English (C1), German (C1)"
     }
-  ]
+  ],
+  "stack": "TypeScript, React, Node.js, GraphQL | micro-frontends, design systems, accessibility tooling | Salesforce integrations, event-driven architecture"
 }

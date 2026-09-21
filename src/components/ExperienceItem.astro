@@ -3,10 +3,11 @@ interface Props {
 	title: string;
 	period: string;
 	href?: string;
+	summary?: string;
 	points: string[];
 }
 
-const { title, period, href, points } = Astro.props;
+const { title, period, href, summary, points } = Astro.props;
 ---
 
 <div class="py-4 first:pt-0">
@@ -31,6 +32,9 @@ const { title, period, href, points } = Astro.props;
 			</h3>
 			<span class="text-sm text-zinc-500 dark:text-zinc-500">{period}</span>
 		</div>
+	)}
+	{summary && (
+		<p class="text-zinc-600 dark:text-zinc-400 mb-2">{summary}</p>
 	)}
 	<ul class="space-y-1 ml-0 list-none">
 		{points.map((point) => (

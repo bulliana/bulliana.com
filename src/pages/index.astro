@@ -6,7 +6,7 @@ import EducationItem from '../components/EducationItem.astro';
 import AdditionalInfoItem from '../components/AdditionalInfoItem.astro';
 import siteData from '../content/site.json';
 
-const { name, tagline, location, links, about, values, experience, freelancing, education, additionalInfo } = siteData;
+const { name, tagline, location, links, about, values, stack, experience, freelancing, education, additionalInfo } = siteData;
 ---
 
 <BaseLayout title={name} description={tagline}>
@@ -42,6 +42,13 @@ const { name, tagline, location, links, about, values, experience, freelancing, 
 		</section>
 	)}
 
+	{stack && (
+		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
+			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Technical stack</h2>
+			<p class="text-zinc-600 dark:text-zinc-400">{stack}</p>
+		</section>
+	)}
+
 	{experience && experience.length > 0 && (
 		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
 			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Experience</h2>
@@ -51,6 +58,7 @@ const { name, tagline, location, links, about, values, experience, freelancing, 
 						title={item.title}
 						period={item.period}
 						href={item.href}
+						summary={item.summary}
 						points={item.points}
 					/>
 				))}
@@ -60,7 +68,7 @@ const { name, tagline, location, links, about, values, experience, freelancing, 
 
 	{freelancing && freelancing.length > 0 && (
 		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
-			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Freelancing</h2>
+			<h2 class="mb-6 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Freelancing <span class="text-base font-normal text-zinc-500 dark:text-zinc-500">(part-time, alongside employment)</span></h2>
 			<div class="space-y-0">
 				{freelancing.map((item) => (
 					<ExperienceItem
