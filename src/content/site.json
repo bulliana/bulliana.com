@@ -7,17 +7,10 @@
     "linkedin": "https://www.linkedin.com/in/usirotina/"
   },
   "about": "I lead engineering teams that care about purposeful work, empathy, and clarity. My background in front-end development helps me bridge product, design, and engineering - creating environments where people and products grow together.",
-  "values": [
-    "documented processes",
-    "understanding the bigger picture",
-    "open, clear and direct communication",
-    "cross-functional work",
-    "shared ownership & accountability",
-    "constructive feedback culture"
-  ],
   "experience": [
     {
-      "title": "SoSafe - Engineering Team Lead (EM scope: line manager of 5)",
+      "role": "Engineering Team Lead",
+      "company": "SoSafe",
       "period": "Apr. 2024 - curr.",
       "href": "https://sosafe.de/",
       "summary": "Promoted from Senior Frontend Engineer to Team Lead within 4 months. Lead a cross-functional squad of 5 engineers (frontend, backend, fullstack) owning the Customer and User domains; 8 engineers led over 2 years, through two team rebuilds.",
@@ -45,7 +38,8 @@
       ]
     },
     {
-      "title": "Garden.io - Senior Frontend Engineer",
+      "role": "Senior Frontend Engineer",
+      "company": "Garden.io",
       "period": "Feb. 2023 - Mar. 2024",
       "href": "https://garden.io/",
       "points": [
@@ -57,7 +51,18 @@
       ]
     },
     {
-      "title": "Adjust - Senior Frontend Engineer",
+      "role": "Freelance Frontend Engineer",
+      "company": "Trail",
+      "period": "Oct. 2023 - Feb. 2024",
+      "href": "",
+      "points": [
+        "Frontend features in TypeScript, React, GraphQL/Apollo"
+      ],
+      "note": "part-time, alongside Garden.io"
+    },
+    {
+      "role": "Senior Frontend Engineer",
+      "company": "Adjust",
       "period": "Apr. 2022 - Jan. 2023",
       "href": "https://www.adjust.com/",
       "points": [
@@ -66,7 +71,8 @@
       ]
     },
     {
-      "title": "Uberall - (Squad Lead) Engineering Manager",
+      "role": "Engineering Manager (Squad Lead)",
+      "company": "Uberall",
       "period": "Aug. 2020 - Mar. 2022",
       "href": "https://uberall.com/",
       "summary": "People lead for a cross-functional squad of 6 owning review management (aggregating Google Maps, TripAdvisor and partner reviews into one tool), and frontend hiring manager for the engineering department.",
@@ -85,7 +91,18 @@
       ]
     },
     {
-      "title": "Uberall - Frontend Engineer",
+      "role": "Freelance Frontend Engineer",
+      "company": "Rebels AI",
+      "period": "Dec. 2020 - Jan. 2022",
+      "href": "",
+      "points": [
+        "Refactored a geology webapp and built a task-generator interface in React; direct client consulting"
+      ],
+      "note": "part-time, alongside Uberall"
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Uberall",
       "period": "Aug. 2019 - Jul. 2020",
       "href": "https://uberall.com/",
       "points": [
@@ -96,7 +113,8 @@
       ]
     },
     {
-      "title": "Searchmetrics - Frontend Engineer (joined as working student)",
+      "role": "Frontend Engineer (joined as working student)",
+      "company": "Searchmetrics",
       "period": "Sep. 2016 - Jul. 2019",
       "href": "https://www.searchmetrics.com/",
       "points": [
@@ -105,32 +123,16 @@
       ]
     }
   ],
-  "freelancing": [
-    {
-      "title": "Trail",
-      "period": "Oct. 2023 - Feb. 2024",
-      "href": "",
-      "points": [
-        "Frontend features in TypeScript, React, GraphQL/Apollo"
-      ]
-    },
-    {
-      "title": "Rebels AI",
-      "period": "Dec. 2020 - Jan. 2022",
-      "href": "",
-      "points": [
-        "Refactored a geology webapp and built a task-generator interface in React; direct client consulting"
-      ]
-    }
-  ],
   "education": [
     {
-      "title": "Technical University of Berlin - M. Sc. Computer Science",
+      "degree": "M. Sc. Computer Science",
+      "school": "Technical University of Berlin",
       "period": "2015 - 2018",
       "details": "Major: Media design and Human-computer interaction"
     },
     {
-      "title": "Russian State University for the Humanities - Diploma, Cognitive Systems",
+      "degree": "Diploma, Cognitive Systems",
+      "school": "Russian State University for the Humanities",
       "period": "2009 - 2014",
       "details": ""
     }
