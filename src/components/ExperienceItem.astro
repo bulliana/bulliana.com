@@ -4,7 +4,7 @@ interface Props {
 	period: string;
 	href?: string;
 	summary?: string;
-	points: string[];
+	points: (string | { lead: string; text: string })[];
 }
 
 const { title, period, href, summary, points } = Astro.props;
@@ -40,7 +40,11 @@ const { title, period, href, summary, points } = Astro.props;
 		{points.map((point) => (
 			<li class="text-zinc-600 dark:text-zinc-400 flex items-start">
 				<span class="mr-2 text-zinc-400 dark:text-zinc-600">⚬</span>
-				<span>{point}</span>
+				{typeof point === 'string' ? (
+					<span>{point}</span>
+				) : (
+					<span><strong class="font-semibold text-zinc-800 dark:text-zinc-200">{point.lead}</strong> {point.text}</span>
+				)}
 			</li>
 		))}
 	</ul>

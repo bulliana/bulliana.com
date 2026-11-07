@@ -6,7 +6,7 @@ import EducationItem from '../components/EducationItem.astro';
 import AdditionalInfoItem from '../components/AdditionalInfoItem.astro';
 import siteData from '../content/site.json';
 
-const { name, tagline, location, links, about, values, stack, experience, freelancing, education, additionalInfo } = siteData;
+const { name, tagline, location, links, about, values, skills, experience, freelancing, education, additionalInfo } = siteData;
 ---
 
 <BaseLayout title={name} description={tagline}>
@@ -42,10 +42,16 @@ const { name, tagline, location, links, about, values, stack, experience, freela
 		</section>
 	)}
 
-	{stack && (
+	{skills && skills.length > 0 && (
 		<section class="mb-16 border-t border-zinc-200 pt-12 dark:border-zinc-800">
-			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Technical stack</h2>
-			<p class="text-zinc-600 dark:text-zinc-400">{stack}</p>
+			<h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Skills</h2>
+			<ul class="space-y-1">
+				{skills.map((skill) => (
+					<li class="text-zinc-600 dark:text-zinc-400">
+						<span class="font-semibold text-zinc-800 dark:text-zinc-200">{skill.title}:</span> {skill.items}
+					</li>
+				))}
+			</ul>
 		</section>
 	)}
 

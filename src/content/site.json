@@ -1,7 +1,7 @@
 {
   "name": "Uliana Sirotina",
-  "tagline": "Engineering Manager | Engineering Team Lead",
-  "location": "Munich, Germany",
+  "tagline": "Engineering Manager | People Leadership & Hiring | Engineering Culture",
+  "location": "Munich, Germany (remote/hybrid)",
   "links": {
     "email": "mailto:uliana.sirotina@gmail.com",
     "linkedin": "https://www.linkedin.com/in/usirotina/"
@@ -17,20 +17,31 @@
   ],
   "experience": [
     {
-      "title": "SoSafe - Engineering Team Lead",
+      "title": "SoSafe - Engineering Team Lead (EM scope: line manager of 5)",
       "period": "Apr. 2024 - curr.",
       "href": "https://sosafe.de/",
-      "summary": "Joined as Senior Frontend Engineer, promoted to Team Lead within 4 months.",
+      "summary": "Promoted from Senior Frontend Engineer to Team Lead within 4 months. Lead a cross-functional squad of 5 engineers (frontend, backend, fullstack) owning the Customer and User domains; 8 engineers led over 2 years, through two team rebuilds.",
       "points": [
-        "Lead a cross-functional squad of 5 engineers (frontend, backend, fullstack) owning the Customer and User domains; 8 engineers led over 2 years, through two rebuilds of the team",
-        "Rebuilt the team from merged parts - new PM, new designer, two developer pairs from different squads - and distributed technical ownership to the point of holding only 4 of 16 epics personally, backed by a support rotation and pair coding",
-        "Grew an engineer from QE to mid-level backend, coached a senior engineer out of underperformance, and managed one exit end to end, from calibration to separation",
-        "Ran end-to-end hiring for 2 engineers and trained 3 colleagues into the interview process, including one first-time hiring manager; authored hiring-process improvement proposals",
-        "Initiated and delivered automated accessibility tooling across two product platforms, with recurring metrics, leadership dashboards and documentation for org-wide rollout",
-        "Delivered the 2-digit to 4-digit language code migration unblocking locale variants across 5 teams; blocked a shortcut implementation by quantifying the ~2 months per team of debt it would create",
+        {
+          "lead": "Turned an underperformer around in 7 months.",
+          "text": "Coached a senior engineer out of underperformance through structured feedback."
+        },
+        {
+          "lead": "Managed one exit end to end,",
+          "text": "from calibration to separation."
+        },
+        {
+          "lead": "Grew a QA engineer into backend.",
+          "text": "Moved a QA engineer into a junior backend role and promoted him to mid-level in the next review cycle."
+        },
+        "Ran end-to-end hiring for 2 engineers and trained 3 colleagues to interview (including one first-time hiring manager) and authored hiring-process improvement proposals",
+        "Rebuilt the team from merged parts (new PM, new designer, two developer pairs from different squads) and distributed ownership until holding only 4 of 16 epics personally",
         "Introduced sprint-based planning, velocity tracking and explicit prioritisation; deliberately halved sprint load to reinvest capacity into architecture, technical planning, bug triage and pairing",
-        "Led the technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership",
-        "Followed the incident with a product provisioning audit, run jointly with Product Analytics, that sized a seven-to-eight-figure ARR impact from over- and under-provisioning; drove a new CRM package-version field and a correction migration that made provisioning data fully reliable"
+        "Delivered the 2-digit to 4-digit language code migration unblocking locale variants across 5 teams; blocked a shortcut implementation by quantifying the ~2 months per team of debt it would create",
+        {
+          "lead": "Sized a seven-to-eight-figure annual recurring revenue impact.",
+          "text": "Led the technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership, then a joint provisioning audit with Product Analytics."
+        }
       ]
     },
     {
@@ -38,7 +49,10 @@
       "period": "Feb. 2023 - Mar. 2024",
       "href": "https://garden.io/",
       "points": [
-        "Designed and implemented the customer onboarding flow for the product's free tier launch, covering a gap found late in planning and delivered to the fixed release date",
+        {
+          "lead": "Shipped free-tier onboarding on the fixed release date.",
+          "text": "Designed and implemented the customer onboarding flow for the product's free tier launch, covering a gap found late in planning."
+        },
         "Built product features in TypeScript, React, React Query and styled-components, with smaller improvements to the API"
       ]
     },
@@ -48,21 +62,26 @@
       "href": "https://www.adjust.com/",
       "points": [
         "Restructured the team's API error handling and separated Sentry reporting from the shared company project, improving signal quality for frontend issues",
-        "Introduced a bug board and triage flow for the team",
-        "Built product features in TypeScript, React, React Query and styled-components"
+        "Introduced a bug board and triage flow for the team"
       ]
     },
     {
-      "title": "Uberall - Engineering Manager",
+      "title": "Uberall - (Squad Lead) Engineering Manager",
       "period": "Aug. 2020 - Mar. 2022",
       "href": "https://uberall.com/",
-      "summary": "Led a cross-functional squad of 6 owning review management: aggregating reviews from Google Maps, TripAdvisor and other partners into a single tool for customers to read, sort and respond to them.",
+      "summary": "People lead for a cross-functional squad of 6 owning review management (aggregating Google Maps, TripAdvisor and partner reviews into one tool), and frontend hiring manager for the engineering department.",
       "points": [
-        "Shipped Smart Conversations, a new product built on Google's newly launched Business Messages API, including an early AI auto-response system trained to resolve common customer enquiries without human involvement",
-        "Introduced Scrum from scratch to balance a defect-prone multi-partner ingestion pipeline against new product delivery: two-week sprints with capacity deliberately reserved for incremental fixes, so quality improved steadily without pausing feature work",
-        "Held the team together through an acquisition, a department reorganisation and repeated process changes: zero attrition over two years, with delivery cadence unbroken",
+        {
+          "lead": "Hired 13 frontend engineers across all teams.",
+          "text": "As the department's frontend hiring manager, built the frontend hiring process and its documentation, and trained other engineers to interview."
+        },
+        {
+          "lead": "Zero attrition through an acquisition and a reorg.",
+          "text": "Held the team together through repeated process changes: zero attrition over two years, with delivery cadence unbroken."
+        },
+        "Led a cross-functional squad of 6 owning review management: aggregating reviews from Google Maps, TripAdvisor and other partners into a single tool for customers to read, sort and respond to them",
         "Promoted one engineer to Senior, and mentored a backend engineer from another team into their first Team Lead role, advocating for them with leadership to make it happen",
-        "Frontend hiring manager for the engineering department: hired 13 frontend engineers across all teams, built the frontend hiring process and its documentation, and trained other engineers to interview"
+        "Introduced Scrum from scratch to balance a defect-prone multi-partner ingestion pipeline against new product delivery: two-week sprints with capacity deliberately reserved for incremental fixes, so quality improved steadily without pausing feature work"
       ]
     },
     {
@@ -108,10 +127,10 @@
     {
       "title": "Technical University of Berlin - M. Sc. Computer Science",
       "period": "2015 - 2018",
-      "details": "Majoring in Media design and Human-computer interaction"
+      "details": "Major: Media design and Human-computer interaction"
     },
     {
-      "title": "Russian State University for the Humanities - Diploma, Intellectual Systems in the Humanities",
+      "title": "Russian State University for the Humanities - Diploma, Cognitive Systems",
       "period": "2009 - 2014",
       "details": ""
     }
@@ -126,8 +145,30 @@
     {
       "title": "Languages",
       "period": "",
-      "details": "Russian (native), English (C1), German (C1)"
+      "details": "English (C1), German (C1), Russian (native)"
+    },
+    {
+      "title": "Work permit",
+      "period": "",
+      "details": "Unrestricted work permit, Germany"
     }
   ],
-  "stack": "TypeScript, React, Node.js, GraphQL | micro-frontends, design systems, accessibility tooling | Salesforce integrations, event-driven architecture"
+  "skills": [
+    {
+      "title": "People leadership",
+      "items": "Line management, Performance management, Career development, Promotions, Managed exits"
+    },
+    {
+      "title": "Hiring",
+      "items": "Hiring process design, Interviewer training, Hiring decisions"
+    },
+    {
+      "title": "Ways of working",
+      "items": "Scrum, Sprint planning, Incident communication, Documented processes"
+    },
+    {
+      "title": "Technical background",
+      "items": "TypeScript, React, Node.js, GraphQL"
+    }
+  ]
 }
