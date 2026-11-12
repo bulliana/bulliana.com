@@ -1,12 +1,12 @@
 {
   "name": "Uliana Sirotina",
-  "tagline": "Engineering Manager | People Leadership & Hiring | Engineering Culture",
+  "tagline": "Engineering Manager | People Leadership & Hiring | AI-Enabled Teams",
   "location": "Munich, Germany (remote/hybrid)",
   "links": {
     "email": "mailto:uliana.sirotina@gmail.com",
     "linkedin": "https://www.linkedin.com/in/usirotina/"
   },
-  "about": "Engineering Manager focused on people leadership, hiring and engineering culture, with 10 years in software engineering. As frontend hiring manager at Uberall, hired 13 engineers across all teams and kept the squad at zero attrition through an acquisition and a reorganisation. At SoSafe, promoted to lead within 4 months and led 8 engineers over 2 years through two team rebuilds. Technical depth to talk architecture; focus on performance, growth and how teams work together.",
+  "about": "Engineering Manager focused on people leadership, hiring and AI-enabled teams, with 10 years in software engineering. Hired 13 frontend engineers at Uberall and kept a squad at zero attrition through an acquisition and a reorganisation. At SoSafe, kept a team delivering through two rebuilds, a PM change and a scope shift, while making AI part of how the team works and staying ahead of how fast the tooling changes.",
   "experience": [
     {
       "role": "Engineering Team Lead",
@@ -15,31 +15,29 @@
       "href": "https://sosafe.de/",
       "summary": "Promoted from Senior Frontend Engineer to Team Lead within 4 months. Lead a cross-functional squad of 5 engineers (frontend, backend, fullstack) owning the Customer and User domains; 8 engineers led over 2 years, through two team rebuilds.",
       "points": [
+        "Rebuilt the team from merged parts (new PM, new designer, two developer pairs from different squads) and distributed ownership until holding only 4 of 16 epics personally",
+        "Led the team through a loss of its PM, a scope change to maintenance mode and two engineer resignations in the same week, while keeping delivery on track across three fronts: accessibility tooling, the self-service launch and customer domain fixes",
         {
-          "lead": "Turned an underperformer around in 7 months.",
-          "text": "Coached a senior engineer out of underperformance through structured feedback."
-        },
-        {
-          "lead": "Managed one exit end to end,",
-          "text": "from calibration to separation."
-        },
-        {
-          "lead": "Grew a QA engineer into backend.",
-          "text": "Moved a QA engineer into a junior backend role and promoted him to mid-level in the next review cycle."
+          "lead": "Developed people through structured feedback:",
+          "text": "coached a senior engineer out of underperformance in 7 months, moved a QA engineer into a junior backend role and promoted him to mid-level in the next cycle; managed one exit end to end, from calibration to separation."
         },
         "Ran end-to-end hiring for 2 engineers and trained 3 colleagues to interview (including one first-time hiring manager) and authored hiring-process improvement proposals",
         {
-          "lead": "Made the team an early AI adopter",
-          "text": "(first to volunteer for tool trials, 2-day AI hackathon, AI now fully rolled out) and connected the design system to Claude Design with our design system designer, enabling engineers, including backend, to design full UI/UX flows despite limited designer capacity; designed a Sales-facing test customer creation flow myself."
+          "lead": "Built an AI skill for calibration",
+          "text": "and structured performance feedback, aligned to SoSafe's Engineering Levels Framework and reused by managers across the company."
         },
-        "Built an AI skill for calibration and structured performance feedback, aligned to SoSafe's Engineering Levels Framework and reused by managers across the company",
-        "Rebuilt the team from merged parts (new PM, new designer, two developer pairs from different squads) and distributed ownership until holding only 4 of 16 epics personally",
-        "Introduced sprint-based planning, velocity tracking and explicit prioritisation; deliberately halved sprint load to reinvest capacity into architecture, technical planning, bug triage and pairing",
-        "Delivered the 2-digit to 4-digit language code migration unblocking locale variants across 5 teams; blocked a shortcut implementation by quantifying the ~2 months per team of debt it would create",
         {
-          "lead": "Sized a seven-to-eight-figure annual recurring revenue impact.",
-          "text": "Led the Claude-assisted technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership, then a joint provisioning audit with Product Analytics."
-        }
+          "lead": "Made the team an early AI adopter",
+          "text": "(first to volunteer for tool trials, 2-day AI hackathon, AI now fully rolled out)."
+        },
+        "Connected the design system to Claude Design with the design system designer, enabling engineers (including backend) to design full UI/UX flows despite limited designer capacity; personally designed a Sales-facing test customer creation flow",
+        "Core team behind the customer self-service launch, owning delivery of the onboarding flow on our platform; self-service is now available for all low-to-mid tier customers, freeing CS from technical support to focus on quality consulting",
+        "Investigated why language handling was so complex and which parts of our architecture it touched, then planned and implemented the move from 2-digit to 4-digit language codes in our team, which owns the User and Customer objects; pushed back on shortcuts proposed by other teams with an estimate of ~2 months of rework per team across 5 teams",
+        {
+          "lead": "Engineering partner for CS, CRM and Solution Engineering",
+          "text": "on the internal platform: Salesforce integration, product provisioning and usability of internal UX flows (demo creation, pricing & packaging); led the Claude-assisted investigation of a pricing incident affecting hundreds of customers and the follow-up provisioning audit with Product Analytics that sized a seven-to-eight-figure ARR impact."
+        },
+        "Introduced sprint-based planning, velocity tracking and explicit prioritisation; deliberately halved sprint load to reinvest capacity into architecture, technical planning, bug triage and pairing"
       ]
     },
     {
@@ -54,16 +52,6 @@
         },
         "Built product features in TypeScript, React, React Query and styled-components, with smaller improvements to the API"
       ]
-    },
-    {
-      "role": "Freelance Frontend Engineer",
-      "company": "Trail",
-      "period": "Oct. 2023 - Feb. 2024",
-      "href": "",
-      "points": [
-        "Frontend features in TypeScript, React, GraphQL/Apollo"
-      ],
-      "note": "part-time, alongside Garden.io"
     },
     {
       "role": "Senior Frontend Engineer",
@@ -87,23 +75,12 @@
           "text": "As the department's frontend hiring manager, built the frontend hiring process and its documentation, and trained other engineers to interview."
         },
         {
-          "lead": "Zero attrition through an acquisition and a reorg.",
-          "text": "Held the team together through repeated process changes: zero attrition over two years, with delivery cadence unbroken."
+          "lead": "Held the team together through an acquisition, a reorganisation and repeated process changes:",
+          "text": "zero attrition and unbroken delivery cadence."
         },
-        "Led a cross-functional squad of 6 owning review management: aggregating reviews from Google Maps, TripAdvisor and other partners into a single tool for customers to read, sort and respond to them",
         "Promoted one engineer to Senior, and mentored a backend engineer from another team into their first Team Lead role, advocating for them with leadership to make it happen",
         "Introduced Scrum from scratch to balance a defect-prone multi-partner ingestion pipeline against new product delivery: two-week sprints with capacity deliberately reserved for incremental fixes, so quality improved steadily without pausing feature work"
       ]
-    },
-    {
-      "role": "Freelance Frontend Engineer",
-      "company": "Rebels AI",
-      "period": "Dec. 2020 - Jan. 2022",
-      "href": "",
-      "points": [
-        "Refactored a geology webapp and built a task-generator interface in React; direct client consulting"
-      ],
-      "note": "part-time, alongside Uberall"
     },
     {
       "role": "Frontend Engineer",
@@ -126,6 +103,28 @@
         "Created and maintained UI-kit (component library) - Storybook, ReactJS",
         "Mentored frontend working students"
       ]
+    }
+  ],
+  "freelance": [
+    {
+      "role": "Freelance Frontend Engineer",
+      "company": "Trail",
+      "period": "Oct. 2023 - Feb. 2024",
+      "href": "",
+      "points": [
+        "Frontend features in TypeScript, React, GraphQL/Apollo"
+      ],
+      "note": "part-time, alongside Garden.io"
+    },
+    {
+      "role": "Freelance Frontend Engineer",
+      "company": "Rebels AI",
+      "period": "Dec. 2020 - Jan. 2022",
+      "href": "",
+      "points": [
+        "Refactored a geology webapp and built a task-generator interface in React; direct client consulting"
+      ],
+      "note": "part-time, alongside Uberall"
     }
   ],
   "education": [
@@ -179,7 +178,7 @@
     },
     {
       "title": "Technical background",
-      "items": "TypeScript, React, Node.js | Led teams with Java/Kotlin backends"
+      "items": "TypeScript, React, Node.js, design systems | Led teams with Java/Kotlin backends"
     }
   ]
 }
