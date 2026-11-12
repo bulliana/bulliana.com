@@ -28,12 +28,17 @@
           "text": "Moved a QA engineer into a junior backend role and promoted him to mid-level in the next review cycle."
         },
         "Ran end-to-end hiring for 2 engineers and trained 3 colleagues to interview (including one first-time hiring manager) and authored hiring-process improvement proposals",
+        {
+          "lead": "Made the team an early AI adopter",
+          "text": "(first to volunteer for tool trials, 2-day AI hackathon, AI now fully rolled out) and connected the design system to Claude Design with our design system designer, enabling engineers, including backend, to design full UI/UX flows despite limited designer capacity; designed a Sales-facing test customer creation flow myself."
+        },
+        "Built an AI skill for calibration and structured performance feedback, aligned to SoSafe's Engineering Levels Framework and reused by managers across the company",
         "Rebuilt the team from merged parts (new PM, new designer, two developer pairs from different squads) and distributed ownership until holding only 4 of 16 epics personally",
         "Introduced sprint-based planning, velocity tracking and explicit prioritisation; deliberately halved sprint load to reinvest capacity into architecture, technical planning, bug triage and pairing",
         "Delivered the 2-digit to 4-digit language code migration unblocking locale variants across 5 teams; blocked a shortcut implementation by quantifying the ~2 months per team of debt it would create",
         {
           "lead": "Sized a seven-to-eight-figure annual recurring revenue impact.",
-          "text": "Led the technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership, then a joint provisioning audit with Product Analytics."
+          "text": "Led the Claude-assisted technical investigation and director-level communication of a pricing incident affecting hundreds of customers, delivering root cause and a remediation plan to engineering and GTM leadership, then a joint provisioning audit with Product Analytics."
         }
       ]
     },
@@ -169,8 +174,12 @@
       "items": "Scrum, Sprint planning, Incident communication, Documented processes"
     },
     {
+      "title": "AI",
+      "items": "Claude, Claude Design, ChatGPT, AI skills and agents, team adoption and rollout"
+    },
+    {
       "title": "Technical background",
-      "items": "TypeScript, React, Node.js, GraphQL"
+      "items": "TypeScript, React, Node.js | Led teams with Java/Kotlin backends"
     }
   ]
 }
